@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implements\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArcAPI.Repository\ArcAPI.Repository.csproj" />
+    <ProjectReference Include="..\ArcAPI.EFCore\ArcAPI.EFCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+  </ItemGroup>
+</Project>
